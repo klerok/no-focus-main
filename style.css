@@ -1,0 +1,123 @@
+@font-face {
+    font-family: 'IBM Plex Mono';
+    src: url(fonts/IBMPlexMono-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'IBM Plex Mono';
+    src: url(fonts/IBMPlexMono-Bold.ttf);
+    font-weight: 700;
+}
+
+:root {
+    --font-family: "IBM Plex Mono", sans-serif;
+}
+
+body {
+    background-color: #000028;
+}
+
+.header {
+    width: 1024px;
+    height: 768px;
+    background-image: url(assets/images/cover-image-dark.svg);
+}
+
+.navigation {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.navigation button {
+    border: none;
+    background-color: transparent;
+    font-size: 18px;
+    color: #FF0070;
+    
+}
+
+.navigation button:hover {
+    cursor: pointer;
+    font-size: 18px;
+    border: 1px solid #ff0070;
+}
+
+.lamp {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 139%;
+    text-align: center;
+    color: #ff0070;
+    margin: 0;
+    position: absolute;
+    top: 20px;
+    left: 943px;
+}
+
+.lamp::after {
+    border-radius: 100%;
+    background-color: #FF0070;
+    box-shadow: 0 0 4px 2px #ff0070;
+    width: 9px;
+    height: 9px;
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 8px;
+    left: 43px;
+}
+
+h1 {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 157px;
+    color: #DB00FF;
+    text-shadow: 4px 4px #ff0070;
+    line-height: 83%;
+    margin: 0;
+    position: absolute;
+    top: 319px;
+}
+
+.title {
+    background-color: #FF0070;
+    display: flex;
+    width: 491px;
+    height: 70px;
+    position: absolute;
+    left: 513px;
+    top: 563px;
+}
+
+.title > p {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 130%;
+    color: #000028;
+    margin: 0;
+}
+
+.square-top {
+    border-right: 1px solid #ff0070;
+    border-top: 1px solid #ff0070;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 20px;
+    left: 976px;
+}
+
+.square-bottom {
+    border-bottom: 1px solid #ff0070;
+    border-left: 1px solid #ff0070;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 723px;
+    left: 20px;
+}
